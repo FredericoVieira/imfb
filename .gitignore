@@ -1,0 +1,6 @@
+# Ignored Files #
+###################
+*.pyo
+*.pyc
+*~
+.DS_Store
