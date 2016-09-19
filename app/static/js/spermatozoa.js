@@ -28,7 +28,7 @@ var spermatozoa_graph = (function() {
 
     var g = svg.selectAll("g")
         .data(spermatozoa)
-      .enter().append("g");
+        .enter().append("g");
 
     var head = g.append("ellipse")
         .attr("rx", 6.5)

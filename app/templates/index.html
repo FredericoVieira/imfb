@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>In my father's bag...</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description" content="...">
 
-        <!-- Facebook Properties -->
-        <meta property="og:image" content="..."/>
-        <meta property="og:url" content=".../"/>
-        <meta property="og:title" content="..."/>
-        <meta property="og:description" content="..."/>
-
-        <link rel='shortcut icon' href='/static/img/favicon.ico' type='image/x-icon' />
+        <link rel='shortcut icon' href='/static/img/favicon.ico' type='image/x-icon'/>
 
         <!-- CSS Files -->
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" type="text/css">
         <link rel="stylesheet" type="text/css" href="/static/css/spermatozoa.css" type="text/css">
-
-        <title>In my father's bag...</title>
     </head>
     <body>
-        <header>
+        <!-- Header -->
+        <header id="header">
+            <h1>In my father's bag...</h1>
+            <p>...a simple application that shows you in the beginnings of life.</p>
         </header>
-        <div class="container">
+
+        <!-- Controls -->
+        <section class="controls">
+        <button id="add-szoid" type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Add Brother</button>
+        <button id="kill-random-szoid" type="button" class="btn btn-warning .disable"><i class="fa fa-minus" aria-hidden="true"></i> Kill Brother</button>
+        <button id="refresh-szoid" type="button" class="btn btn-danger"><i class="fa fa-refresh" aria-hidden="true"></i> Kill Them All</button>
+        </section>
+
+        <!-- Graph -->
+        <section>
           {% block graph_content %}
           {% endblock graph_content %}
-        </div>
+        </section>
 
-    <!-- Javascript Files -->
-    <script type="text/javascript" src="/static/js/jquery.3.1.0.min.js"></script>
-    <script type="text/javascript" src="/static/js/d3.v3.min.js"></script>
-    <script type="text/javascript" src="/static/js/index.js"></script>
-    <script type="text/javascript" src="/static/js/spermatozoa.js"></script>
-    
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>Credits: <a href="http://html5up.net">HTML5 UP</a> and <a href="http://bl.ocks.org/mbostock/1136236">D3 Spermatozoa</a></li>
+            </ul>
+        </footer>
+
+        <!-- Javascript Files -->
+        <script type="text/javascript" src="/static/js/jquery.3.1.0.min.js"></script>
+        <script type="text/javascript" src="/static/js/d3.v3.min.js"></script>
+        <script type="text/javascript" src="/static/js/index.js"></script>
+        <script type="text/javascript" src="/static/js/spermatozoa.js"></script>
     </body>
 </html>
