@@ -22,9 +22,15 @@
 
         <!-- Controls -->
         <section class="controls">
-        <button id="add-szoid" type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Add Brother</button>
-        <button id="kill-random-szoid" type="button" class="btn btn-warning .disable"><i class="fa fa-minus" aria-hidden="true"></i> Kill Brother</button>
-        <button id="refresh-szoid" type="button" class="btn btn-danger"><i class="fa fa-refresh" aria-hidden="true"></i> Kill Them All</button>
+            <div class="menu-controls">
+                <button id="add-szoid" type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Add Brother</button>
+                <!-- <button id="add-nszoid" type="button" class="btn btn-primary"><i class="fa fa-refresh" aria-hidden="true"></i> Add x Brother's</button> -->
+                <button id="kill-random-szoid" type="button" class="btn btn-warning"><i class="fa fa-minus" aria-hidden="true"></i> Kill Brother</button>
+                <button id="refresh-szoid" type="button" class="btn btn-danger"><i class="fa fa-refresh" aria-hidden="true"></i> Kill Them All</button>
+            </div>
+            <div id="alert" class="alert alert-danger fade hide">
+                <strong></strong>
+            </div>
         </section>
 
         <!-- Graph -->
@@ -36,10 +42,10 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                <li><a href="https://twitter.com/fredvieira09" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/fredduartevieira" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/FredericoVieira" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="mailto:fredops1@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
             </ul>
             <ul class="copyright">
                 <li>Credits: <a href="http://html5up.net">HTML5 UP</a> and <a href="http://bl.ocks.org/mbostock/1136236">D3 Spermatozoa</a></li>
@@ -49,6 +55,7 @@
         <!-- Javascript Files -->
         <script type="text/javascript" src="/static/js/jquery.3.1.0.min.js"></script>
         <script type="text/javascript" src="/static/js/d3.v3.min.js"></script>
+        <script src="https://d3js.org/d3-timer.v1.min.js"></script>
         <script type="text/javascript" src="/static/js/index.js"></script>
         <script type="text/javascript" src="/static/js/spermatozoa.js"></script>
     </body>

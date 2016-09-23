@@ -1,13 +1,41 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css');
 
-#spermatozoa {
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+.fade.in {
+    opacity: 1;
+}
+
+.alert {
+    width: 200px;
+    height: 30px;
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+    border-top: 0px;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+.menu-controls{
+    float: left;
+    margin: 0 0 1em 0;
+}
+
+#spermatozoa_graph {
   background: #000;
   height: 500px;
   width: 700px;
 }
 
-    #spermatozoa svg{
+    #spermatozoa_graph svg{
       border-style: solid;
       border-width: 2px;
     }
@@ -162,7 +190,7 @@ ul {
     color: rgba(255, 255, 255, 0.5);
     left: 4em;
     opacity: 0.5;
-    margin: 2em 0 1em 0;
+    margin: 4em 0 1em 0;
 }
 
     #footer .icons {
